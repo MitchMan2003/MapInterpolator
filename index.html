@@ -1,12 +1,58 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Map Interpolator</title>
+
+    <!-- Primary Page Title -->
+    <title>Map Interpolator – Free ECU Tuning Table Rescaling Tool</title>
+
+    <!-- Search Engine Optimization -->
+    <meta name="description" content="Map Interpolator is a free tuning tool that rescales automotive ECU data tables to new X/Y axes while preserving tuned values. Works with Holley, HP Tuners, EFI Live, MegaSquirt, and standalone ECUs.">
+    <meta name="keywords" content="map interpolator, tuning table interpolator, axis rescale tool, ECU tuning, Holley EFI table converter, HP Tuners axis scaling, VE table interpolation, ignition table scaling, automotive tuning tools, ECU map rescaler">
+    <meta name="author" content="Map Interpolator">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://mapinterpolator.com/">
+
+    <!-- Open Graph (Facebook, Discord, LinkedIn) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Map Interpolator – Free ECU Table Axis Converter">
+    <meta property="og:description" content="Rescale and interpolate any automotive tuning table to new axes while preserving tuned values. Supports Holley, HP Tuners, EFI Live, and more.">
+    <meta property="og:url" content="https://mapinterpolator.com/">
+    <meta property="og:image" content="https://mapinterpolator.com/MapInterpolator.png">
+    <meta property="og:site_name" content="Map Interpolator">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Map Interpolator – Tuning Table Axis Interpolator">
+    <meta name="twitter:description" content="A free online interpolation tool for rescaling ECU data tables while preserving tuned values.">
+    <meta name="twitter:image" content="https://mapinterpolator.com/MapInterpolator.png">
+
+    <!-- Favicon (optional, but recommended) -->
+    <link rel="icon" type="image/png" href="MapInterpolator.png">
+
+    <!-- JSON-LD Structured Data for Google Ranking -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Map Interpolator",
+      "url": "https://mapinterpolator.com",
+      "applicationCategory": "Utility",
+      "operatingSystem": "Web",
+      "description": "A free online interpolation tool for automotive tuners to rescale ECU data tables using axis interpolation while preserving tuned values.",
+      "image": "https://mapinterpolator.com/MapInterpolator.png"
+    }
+    </script>
+
+    <!-- Your JS -->
     <script src="index.js" defer></script>
 
+    <!-- ---------- STYLES ---------- -->
     <style>
+        /* your style sheet EXACTLY as you pasted it */
         :root {
             --lemans-blue: #0046A8;
             --lemans-blue-dark: #00347e;
@@ -24,7 +70,6 @@
             color: var(--black);
         }
 
-        /* ---------- LOGO AREA ---------- */
         .logo-container {
             position: absolute;
             top: 15px;
@@ -32,15 +77,14 @@
         }
 
         .logo-img {
-            height: 180px;   /* Adjust this size if needed */
+            height: 180px;
             width: auto;
         }
 
-        /* Title spacing so logo doesn’t overlap */
         h1 {
             color: var(--lemans-blue);
             text-align: center;
-            margin-top: 80px; /* pushes title down below logo */
+            margin-top: 80px;
         }
 
         h2, h3 {
@@ -97,7 +141,6 @@
             background: var(--gray-light);
         }
 
-        /* BLUE BUTTONS IN NEW TABLE SECTION */
         .new-table button.copy-btn {
             background: var(--lemans-blue);
             border-color: var(--lemans-blue-dark);
